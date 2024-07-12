@@ -38,6 +38,8 @@ vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
+-- Set the cursor to blink in different modes
+vim.opt.guicursor = 'n-v-c:block-blinkon1-blinkoff1,i-ci-ve:ver25-blinkon1-blinkoff1,r-cr:hor20-blinkon1-blinkoff1,o:hor50-blinkon1-blinkoff1'
 
 -- Make line numbers default
 vim.opt.number = true
@@ -207,7 +209,7 @@ require('lazy').setup({
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
-      vim.cmd.colorscheme 'slate'
+      vim.cmd.colorscheme 'vim'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
