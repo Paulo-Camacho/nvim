@@ -175,7 +175,7 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   -- Add Harpoon plugin
   {
-    'ThePrimeagen/harpoon',
+    --    'ThePrimeagen/harpoon',
     opts = {}, -- You can add your configuration options here if needed
   },
 
